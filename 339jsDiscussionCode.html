@@ -22,15 +22,18 @@
 		
 		// 1. Change the h1 element to your name.
 
-
+		document.querySelector("h1").innerHTML = "Kevin Zhu";
 
 		// 2. Update the three span elements using ONLY JavaScript
 
-
+		document.getElementById("URL").innerHTML = "file:///C:/Users/kzhu2/Downloads/SI%20339/339_Discussion_Wk9-main/339jsDiscussionCode.html";
+		document.getElementById("items").innerHTML = document.querySelectorAll("li").length; 
+		document.getElementById("time").innerHTML = new Date();
 
 		// 3. Change the background color and margin for the entire page.
 	
-
+		document.body.style.backgroundColor = "blue";
+		document.body.style.margin = "50px";
 
     }
 
@@ -38,11 +41,16 @@
     // Each occurence should be on a separate line.  Don't use 
     // paragraphs. 
 
+	function copyFunction(){
+		console.log("ran");
+		document.getElementById("cheer").innerHTML += "Go Blue! <br>";
+	}
+
 		
 </script>
 
 </head>
-<body>
+<body onload = "displayInformation()">
 	<h1>Your name goes here</h1>
 
 	<ol>
